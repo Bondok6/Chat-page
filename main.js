@@ -6,13 +6,12 @@ const prevBtn = document.querySelector('.carousel-control-prev');
 const nextBtn = document.querySelector('.carousel-control-next');
 
 let counter = 1;
-//const size = sliderImages[0].clientWidth;
-const size = 200;
+const size = 100;
 
 slider.style.transform = 'translateX(' + -size * counter + 'px)';
 
 nextBtn.addEventListener('click', () => {
-	if (counter == sliderImages.length - 5) return;
+	if (counter == sliderImages.length - 10) return;
 	slider.style.transition = 'transform 0.4s ease-in-out';
 	counter++;
 	slider.style.transform = 'translateX(' + -size * counter + 'px)';
