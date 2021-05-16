@@ -23,13 +23,3 @@ prevBtn.addEventListener('click', () => {
 	counter--;
 	slider.style.transform = 'translateX(' + -size * counter + 'px)';
 });
-
-//Replay Button
-btnReplay = document.querySelectorAll('.btn-reply');
-inputReplay = document.querySelectorAll('.replay');
-
-for (i = 0; i < btnReplay.length; i++) {
-	btnReplay[i].addEventListener('click', () => {
-		inputReplay[0].style.display = 'block';
-	});
-}
